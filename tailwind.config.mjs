@@ -1,0 +1,60 @@
+/** @type {import('tailwindcss').Config} */
+const primary = {
+  50: '#f3edf8',
+  100: '#dbc9e9',
+  200: '#c4a5da',
+  300: '#ac80cb',
+  400: '#945cbc',
+  500: '#7b43a3',
+  600: '#532D6E',
+  700: '#44255a',
+  800: '#291636',
+  900: '#0e0712',
+};
+export default {
+  content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+  theme: {
+    extend: {
+      colors: {
+        primary,
+      },
+      fontFamily: {
+        body: [
+          'Inter',
+          'ui-sans-serif',
+          'system-ui',
+          '-apple-system',
+          'system-ui',
+          'Segoe UI',
+          'Roboto',
+          'Helvetica Neue',
+          'Arial',
+          'Noto Sans',
+          'sans-serif',
+          'Apple Color Emoji',
+          'Segoe UI Emoji',
+          'Segoe UI Symbol',
+          'Noto Color Emoji',
+        ],
+        sans: [
+          'Inter',
+          'ui-sans-serif',
+          'system-ui',
+          '-apple-system',
+          'system-ui',
+          'Segoe UI',
+          'Roboto',
+          'Helvetica Neue',
+          'Arial',
+          'Noto Sans',
+          'sans-serif',
+          'Apple Color Emoji',
+          'Segoe UI Emoji',
+          'Segoe UI Symbol',
+          'Noto Color Emoji',
+        ],
+      },
+    },
+  },
+  plugins: [],
+};
