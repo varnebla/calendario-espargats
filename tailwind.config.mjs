@@ -1,15 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 const primary = {
-  50: '#f3edf8',
-  100: '#dbc9e9',
-  200: '#c4a5da',
-  300: '#ac80cb',
-  400: '#945cbc',
-  500: '#7b43a3',
-  600: '#532D6E',
-  700: '#44255a',
-  800: '#291636',
-  900: '#0e0712',
+  100: '#dfd9e8',
+  200: '#bfb2d1',
+  300: '#a08cb9',
+  400: '#8065a2',
+  500: '#603f8b',
+  600: '#4d326f',
+  700: '#3a2653',
+  800: '#302046',
+  900: '#130d1c',
 };
 export default {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
