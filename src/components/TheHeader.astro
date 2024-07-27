@@ -22,9 +22,9 @@ import logo from '../assets/pegatina_espargats_solo_logo.png';
     </a>
     <div class="flex md:hidden space-x-3 rtl:space-x-reverse">
       <button
-        data-collapse-toggle="navbar-sticky"
+        id="navbar-sticky"
         type="button"
-        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
         aria-controls="navbar-sticky"
         aria-expanded="false"
       >
@@ -66,14 +66,13 @@ import logo from '../assets/pegatina_espargats_solo_logo.png';
             >Patrocinadores</a
           >
         </li>
-        <!-- <li>
-          <a
-            href="#"
-            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 "
-            >Contact</a
-          >
-        </li> -->
       </ul>
     </div>
   </div>
 </nav>
+
+<script>
+  import { toggleSideBar } from '../lib/toggleSideBar';
+  const navBarToggleBtn = document.querySelector('#navbar-sticky');
+  navBarToggleBtn?.addEventListener('click', toggleSideBar);
+</script>
