@@ -1,3 +1,9 @@
+---
+import { Image } from 'astro:assets';
+import firstGoalImage from '../assets/olaf.webp';
+import secondGoalImage from '../assets/bicho-raton.webp';
+---
+
 <section class="bg-white">
   <div
     class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6"
@@ -18,7 +24,7 @@
         calendarios y los beneficios irán directamente a los gatos de Espargats.
       </p>
       <a
-        href="#"
+        href="https://forms.gle/sFBSZD1qyK3EDnHM9"
         class="inline-flex items-center font-medium text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700 mb-4"
       >
         Reservar mi calendario
@@ -35,15 +41,11 @@
       </a>
     </div>
     <div class="grid grid-cols-2 gap-4 mt-8">
-      <img
-        class="w-full rounded-lg"
-        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png"
-        alt="office content 1"
-      />
-      <img
-        class="mt-4 w-full lg:mt-10 rounded-lg"
-        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png"
-        alt="office content 2"
+      <Image src={firstGoalImage} alt="Olaf" class="w-full rounded-lg" />
+      <Image
+        src={secondGoalImage}
+        alt="Bicho y Ratón"
+        class="w-full rounded-lg object-cover"
       />
     </div>
   </div>

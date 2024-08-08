@@ -1,3 +1,8 @@
+---
+import { Image } from 'astro:assets';
+import featuresImage from '../assets/nube.webp';
+---
+
 <section class="bg-white">
   <div
     class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6"
@@ -139,7 +144,7 @@
       </div>
       <div class="w-full flex justify-center mb-4 lg:mb-0">
         <a
-          href="#"
+          href="https://forms.gle/sFBSZD1qyK3EDnHM9"
           class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-600 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300"
         >
           ¡Quiero mi calendario!
@@ -157,10 +162,10 @@
       </div>
     </div>
     <div class="order-1 py-4">
-      <img
+      <Image
+        src={featuresImage}
+        alt="Un calendario muy especial"
         class="w-full rounded-lg"
-        src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png"
-        alt="office content 1"
       />
     </div>
   </div>
