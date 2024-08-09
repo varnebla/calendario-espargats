@@ -1,6 +1,7 @@
 ---
 import TheHeader from '../components/TheHeader.astro';
 import SideBar from '../components/SideBar.astro';
+import '@fontsource-variable/inter';
 interface Props {
   title: string;
   description: string;
@@ -40,7 +41,7 @@ const { title, description } = Astro.props;
       content="https://opengraph.b-cdn.net/production/images/cc32d166-36c2-4bb9-9895-44fbdb239501.jpg?token=bGmCFe7niJHVdDx2JTaKigYKNGgfwQBRDnAxl04IkHs&height=675&width=1200&expires=33259154916"
     />
   </head>
-  <body>
+  <body class="font-body">
     <TheHeader />
     <SideBar />
     <main>
