@@ -70,19 +70,19 @@ const SPONSORS = [
       SPONSORS.map((sponsor) => {
         if (!sponsor.url)
           return (
-            <div class="inline-block  hover:scale-105 transition-transform duration-150 w-36 px-8">
+            <div class="inline-block  hover:scale-105 transition-transform duration-150 w-44 px-6">
               <img src={sponsor.logo} alt={sponsor.name} class="w-full" />
             </div>
           );
         return (
           <a
             href={sponsor.url}
-            class="inline-block  hover:scale-105 transition-transform duration-150 w-36 px-8"
+            class="inline-block  hover:scale-105 transition-transform duration-150 w-44 px-6"
             target="_blank"
             rel="noopener noreferrer"
             title={sponsor.name}
           >
-            <img src={sponsor.logo} alt={sponsor.name} class="w-36" />
+            <img src={sponsor.logo} alt={sponsor.name} class="w-full" />
           </a>
         );
       })
@@ -93,19 +93,19 @@ const SPONSORS = [
       SPONSORS.map((sponsor) => {
         if (!sponsor.url)
           return (
-            <div class="inline-block  hover:scale-105 transition-transform duration-150 w-36 px-8">
-              <img src={sponsor.logo} alt={sponsor.name} class="w-36" />
+            <div class="inline-block  hover:scale-105 transition-transform duration-150 w-44 px-6">
+              <img src={sponsor.logo} alt={sponsor.name} class="w-full" />
             </div>
           );
         return (
           <a
             href={sponsor.url}
-            class="inline-block  hover:scale-105 transition-transform duration-150 w-36 px-8"
+            class="inline-block  hover:scale-105 transition-transform duration-150 w-44 px-6"
             target="_blank"
             rel="noopener noreferrer"
             title={sponsor.name}
           >
-            <img src={sponsor.logo} alt={sponsor.name} class="w-36" />
+            <img src={sponsor.logo} alt={sponsor.name} class="w-full" />
           </a>
         );
       })
@@ -127,7 +127,7 @@ const SPONSORS = [
   }
 
   .logos-slider {
-    animation: slide 15s linear infinite;
+    animation: slide 30s linear infinite;
   }
   #logos:hover .logos-slider {
     animation-play-state: paused;
