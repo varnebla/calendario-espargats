@@ -65,19 +65,19 @@ const SPONSORS = [
   <span
     class="absolute top-0 left-0 h-full w-24 bg-gradient-to-r from-white to-transparent z-10"
   ></span>
-  <div class="logos-slider flex items-center justify-center gap-6 py-2">
+  <div class="logos-slider flex items-center justify-center py-2">
     {
       SPONSORS.map((sponsor) => {
         if (!sponsor.url)
           return (
-            <div class="inline-block  hover:scale-105 transition-transform duration-150 w-36 px-5">
+            <div class="inline-block  hover:scale-105 transition-transform duration-150 w-36 px-8">
               <img src={sponsor.logo} alt={sponsor.name} class="w-full" />
             </div>
           );
         return (
           <a
             href={sponsor.url}
-            class="inline-block  hover:scale-105 transition-transform duration-150 w-36 px-5"
+            class="inline-block  hover:scale-105 transition-transform duration-150 w-36 px-8"
             target="_blank"
             rel="noopener noreferrer"
             title={sponsor.name}
@@ -88,19 +88,19 @@ const SPONSORS = [
       })
     }
   </div>
-  <div class="logos-slider flex items-center justify-center gap-4 py-2">
+  <div class="logos-slider flex items-center justify-center py-2">
     {
       SPONSORS.map((sponsor) => {
         if (!sponsor.url)
           return (
-            <div class="inline-block  hover:scale-105 transition-transform duration-150 w-36 px-5">
+            <div class="inline-block  hover:scale-105 transition-transform duration-150 w-36 px-8">
               <img src={sponsor.logo} alt={sponsor.name} class="w-36" />
             </div>
           );
         return (
           <a
             href={sponsor.url}
-            class="inline-block  hover:scale-105 transition-transform duration-150 w-36 px-5"
+            class="inline-block  hover:scale-105 transition-transform duration-150 w-36 px-8"
             target="_blank"
             rel="noopener noreferrer"
             title={sponsor.name}
@@ -127,7 +127,7 @@ const SPONSORS = [
   }
 
   .logos-slider {
-    animation: slide 30s linear infinite;
+    animation: slide 15s linear infinite;
   }
   #logos:hover .logos-slider {
     animation-play-state: paused;
