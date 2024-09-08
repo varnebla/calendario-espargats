@@ -61,23 +61,23 @@ const SPONSORS = [
 ];
 ---
 
-<div id="logos" class="flex overflow-hidden flex-nowrap relative h-40">
+<div id="logos" class="overflow-hidden flex flex-nowrap relative h-40">
   <span
     class="absolute top-0 left-0 h-full w-24 bg-gradient-to-r from-white to-transparent z-10"
   ></span>
-  <div class="logos-slider inline-flex justify-center gap-4 py-2">
+  <div class="logos-slider flex items-center justify-center gap-6 py-2">
     {
       SPONSORS.map((sponsor) => {
         if (!sponsor.url)
           return (
-            <div class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center min-w-max hover:scale-105 transition-transform duration-150">
-              <img src={sponsor.logo} alt={sponsor.name} class="w-36" />
+            <div class="inline-block  hover:scale-105 transition-transform duration-150 w-36 px-5">
+              <img src={sponsor.logo} alt={sponsor.name} class="w-full" />
             </div>
           );
         return (
           <a
             href={sponsor.url}
-            class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center min-w-max hover:scale-105 transition-transform duration-150"
+            class="inline-block  hover:scale-105 transition-transform duration-150 w-36 px-5"
             target="_blank"
             rel="noopener noreferrer"
             title={sponsor.name}
@@ -88,19 +88,19 @@ const SPONSORS = [
       })
     }
   </div>
-  <div class="logos-slider inline-flex justify-center gap-4 py-2">
+  <div class="logos-slider flex items-center justify-center gap-4 py-2">
     {
       SPONSORS.map((sponsor) => {
         if (!sponsor.url)
           return (
-            <div class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center min-w-max hover:scale-105 transition-transform duration-150">
+            <div class="inline-block  hover:scale-105 transition-transform duration-150 w-36 px-5">
               <img src={sponsor.logo} alt={sponsor.name} class="w-36" />
             </div>
           );
         return (
           <a
             href={sponsor.url}
-            class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center min-w-max hover:scale-105 transition-transform duration-150"
+            class="inline-block  hover:scale-105 transition-transform duration-150 w-36 px-5"
             target="_blank"
             rel="noopener noreferrer"
             title={sponsor.name}
