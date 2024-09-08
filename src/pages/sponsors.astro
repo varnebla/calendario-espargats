@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import SponsorsCarousel from '../components/SponsorsCarousel.astro';
 ---
 
 <Layout
@@ -8,7 +9,7 @@ import Layout from '../layouts/Layout.astro';
 >
   <section class="bg-white">
     <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-      <div class="max-w-screen-lg text-gray-500 sm:text-lg">
+      <section class="max-w-screen-lg text-gray-500 sm:text-lg">
         <h1 class="mb-4 text-4xl tracking-tight font-bold text-gray-900">
           Patrocina el calendario solidario de Espargats
         </h1>
@@ -39,8 +40,14 @@ import Layout from '../layouts/Layout.astro';
               clip-rule="evenodd"></path></svg
           >
         </a>
-      </div>
-      <div class="py-8 mx-auto max-w-screen-xl sm:py-16">
+      </section>
+      <section class="py-8 sm:py-16">
+        <h2 class="mb-8 text-2xl tracking-tight font-bold text-gray-900">
+          Ya colaboran con nosotros:
+        </h2>
+        <SponsorsCarousel />
+      </section>
+      <section class="pb-8 mx-auto max-w-screen-xl sm:pb-16">
         <div class="max-w-screen-md mb-8">
           <h2 class="mb-4 text-2xl tracking-tight font-bold text-gray-900">
             ¿Por qué ser patrocinador?
@@ -156,7 +163,7 @@ import Layout from '../layouts/Layout.astro';
               clip-rule="evenodd"></path></svg
           >
         </a>
-      </div>
+      </section>
     </div>
   </section>
 </Layout>

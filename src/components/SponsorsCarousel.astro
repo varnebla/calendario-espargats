@@ -1,0 +1,135 @@
+---
+const SPONSORS = [
+  {
+    name: 'Wald',
+    logo: '/sponsors/wald.webp',
+    url: 'https://waldesparraguera.es/',
+  },
+  {
+    name: 'The Green Dog',
+    logo: '/sponsors/the-green-dog.webp',
+    url: 'https://www.instagram.com/thegreendog.esparreguera',
+  },
+  {
+    name: 'Terminal 20',
+    logo: '/sponsors/terminal20.webp',
+    url: 'https://terminal20.es/',
+  },
+  {
+    name: 'Pantoart',
+    logo: '/sponsors/pantoart.webp',
+    url: 'https://www.pantoart.com',
+  },
+  {
+    name: 'Los Nidos de David',
+    logo: '/sponsors/los-nidos-de-david.webp',
+    url: 'https://www.losnidosdedavid.com/',
+  },
+  {
+    name: 'El Badiu Scrap',
+    logo: '/sponsors/el-badiu-scrap.webp',
+    url: 'https://www.instagram.com/elbadiu_scrap',
+  },
+  {
+    name: 'BCN Retroclass',
+    logo: '/sponsors/bcn-retroclass.webp',
+    url: 'https://retroclassbcn.com/',
+  },
+  {
+    name: 'Valero',
+    logo: '/sponsors/valero.webp',
+    url: 'https://www.instagram.com/valerofornesparreguera',
+  },
+  {
+    name: 'Centre Veterinari Abrera',
+    logo: '/sponsors/centro-veterinario-abrera.webp',
+  },
+  {
+    name: 'Calçats Valencia',
+    logo: '/sponsors/calcats-valencia.webp',
+    url: 'https://espardenyeriabarcelona.com',
+  },
+  {
+    name: 'Ana Marín Modista',
+    logo: '/sponsors/anamarin.webp',
+  },
+  {
+    name: 'Activat ECO',
+    logo: '/sponsors/activat-eco.webp',
+    url: 'https://www.instagram.com/activat.eco',
+  },
+];
+---
+
+<div id="logos" class="flex overflow-hidden flex-nowrap relative h-40">
+  <span
+    class="absolute top-0 left-0 h-full w-24 bg-gradient-to-r from-white to-transparent z-10"
+  ></span>
+  <div class="logos-slider inline-flex justify-center gap-4 py-2">
+    {
+      SPONSORS.map((sponsor) => {
+        if (!sponsor.url)
+          return (
+            <div class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center min-w-max hover:scale-105 transition-transform duration-150">
+              <img src={sponsor.logo} alt={sponsor.name} class="w-36" />
+            </div>
+          );
+        return (
+          <a
+            href={sponsor.url}
+            class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center min-w-max hover:scale-105 transition-transform duration-150"
+            target="_blank"
+            rel="noopener noreferrer"
+            title={sponsor.name}
+          >
+            <img src={sponsor.logo} alt={sponsor.name} class="w-36" />
+          </a>
+        );
+      })
+    }
+  </div>
+  <div class="logos-slider inline-flex justify-center gap-4 py-2">
+    {
+      SPONSORS.map((sponsor) => {
+        if (!sponsor.url)
+          return (
+            <div class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center min-w-max hover:scale-105 transition-transform duration-150">
+              <img src={sponsor.logo} alt={sponsor.name} class="w-36" />
+            </div>
+          );
+        return (
+          <a
+            href={sponsor.url}
+            class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center min-w-max hover:scale-105 transition-transform duration-150"
+            target="_blank"
+            rel="noopener noreferrer"
+            title={sponsor.name}
+          >
+            <img src={sponsor.logo} alt={sponsor.name} class="w-36" />
+          </a>
+        );
+      })
+    }
+  </div>
+  <span
+    class="absolute top-0 right-0 h-full w-24 bg-gradient-to-l from-white to-transparent z-10"
+  ></span>
+</div>
+
+<style>
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  .logos-slider {
+    animation: slide 30s linear infinite;
+  }
+  #logos:hover .logos-slider {
+    animation-play-state: paused;
+  }
+</style>
