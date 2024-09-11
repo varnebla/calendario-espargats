@@ -1,6 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import SponsorsCarousel from '../components/SponsorsCarousel.astro';
+import { SPONSORS } from '../data/sponsors';
+
+console.log(SPONSORS.length, 'length');
+
+const FIRST_SPONSORS = SPONSORS.slice(0, 10);
+const LAST_SPONSORS = SPONSORS.slice(10);
 ---
 
 <Layout
@@ -45,7 +51,8 @@ import SponsorsCarousel from '../components/SponsorsCarousel.astro';
         <h2 class="mb-8 text-2xl tracking-tight font-bold text-gray-900">
           Ya colaboran con nosotros:
         </h2>
-        <SponsorsCarousel />
+        <SponsorsCarousel sponsors={FIRST_SPONSORS} direction="left" />
+        <SponsorsCarousel sponsors={LAST_SPONSORS} direction="right" />
       </section>
       <section class="pb-8 mx-auto max-w-screen-xl sm:pb-16">
         <div class="max-w-screen-md mb-8">

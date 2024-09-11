@@ -1,77 +1,34 @@
 ---
-const SPONSORS = [
-  {
-    name: 'Wald',
-    logo: '/sponsors/wald.webp',
-    url: 'https://waldesparraguera.es/',
-  },
-  {
-    name: 'The Green Dog',
-    logo: '/sponsors/the-green-dog.webp',
-    url: 'https://www.instagram.com/thegreendog.esparreguera',
-  },
-  {
-    name: 'Terminal 20',
-    logo: '/sponsors/terminal20.webp',
-    url: 'https://terminal20.es/',
-  },
-  {
-    name: 'Pantoart',
-    logo: '/sponsors/pantoart.webp',
-    url: 'https://www.pantoart.com',
-  },
-  {
-    name: 'Los Nidos de David',
-    logo: '/sponsors/los-nidos-de-david.webp',
-    url: 'https://www.losnidosdedavid.com/',
-  },
-  {
-    name: 'El Badiu Scrap',
-    logo: '/sponsors/el-badiu-scrap.webp',
-    url: 'https://www.instagram.com/elbadiu_scrap',
-  },
-  {
-    name: 'BCN Retroclass',
-    logo: '/sponsors/bcn-retroclass.webp',
-    url: 'https://retroclassbcn.com/',
-  },
-  {
-    name: 'Valero',
-    logo: '/sponsors/valero.webp',
-    url: 'https://www.instagram.com/valerofornesparreguera',
-  },
-  {
-    name: 'Centre Veterinari Abrera',
-    logo: '/sponsors/centro-veterinario-abrera.webp',
-  },
-  {
-    name: 'Calçats Valencia',
-    logo: '/sponsors/calcats-valencia.webp',
-    url: 'https://espardenyeriabarcelona.com',
-  },
-  {
-    name: 'Ana Marín Modista',
-    logo: '/sponsors/anamarin.webp',
-  },
-  {
-    name: 'Activat ECO',
-    logo: '/sponsors/activat-eco.webp',
-    url: 'https://www.instagram.com/activat.eco',
-  },
-];
+import type { Sponsor } from '../data/sponsors';
+interface Props {
+  sponsors: Sponsor[];
+  direction: 'left' | 'right';
+}
+const { sponsors, direction } = Astro.props;
+console.log(sponsors.length, 'length');
 ---
 
 <div id="logos" class="overflow-hidden flex flex-nowrap relative h-40">
   <span
-    class="absolute top-0 left-0 h-full w-24 bg-gradient-to-r from-white to-transparent z-10"
+    class="absolute top-0 left-0 h-full w-8 tablet:w-16 bg-gradient-to-r from-white to-transparent z-10"
   ></span>
-  <div class="logos-slider flex items-center justify-center py-2">
+  <div
+    class="flex items-center justify-center py-2"
+    class:list={direction === 'right'
+      ? 'logos-slider-to-right'
+      : 'logos-slider'}
+  >
     {
-      SPONSORS.map((sponsor) => {
+      sponsors.map((sponsor) => {
         if (!sponsor.url)
           return (
             <div class="inline-block  hover:scale-105 transition-transform duration-150 w-44 px-6">
-              <img src={sponsor.logo} alt={sponsor.name} class="w-full" />
+              <img
+                src={sponsor.logo}
+                alt={sponsor.name}
+                class="w-full"
+                title={sponsor.name}
+              />
             </div>
           );
         return (
@@ -82,19 +39,34 @@ const SPONSORS = [
             rel="noopener noreferrer"
             title={sponsor.name}
           >
-            <img src={sponsor.logo} alt={sponsor.name} class="w-full" />
+            <img
+              src={sponsor.logo}
+              alt={sponsor.name}
+              class="w-full"
+              title={sponsor.name}
+            />
           </a>
         );
       })
     }
   </div>
-  <div class="logos-slider flex items-center justify-center py-2">
+  <div
+    class="flex items-center justify-center py-2"
+    class:list={direction === 'right'
+      ? 'logos-slider-to-right'
+      : 'logos-slider'}
+  >
     {
-      SPONSORS.map((sponsor) => {
+      sponsors.map((sponsor) => {
         if (!sponsor.url)
           return (
             <div class="inline-block  hover:scale-105 transition-transform duration-150 w-44 px-6">
-              <img src={sponsor.logo} alt={sponsor.name} class="w-full" />
+              <img
+                src={sponsor.logo}
+                alt={sponsor.name}
+                class="w-full"
+                title={sponsor.name}
+              />
             </div>
           );
         return (
@@ -105,14 +77,19 @@ const SPONSORS = [
             rel="noopener noreferrer"
             title={sponsor.name}
           >
-            <img src={sponsor.logo} alt={sponsor.name} class="w-full" />
+            <img
+              src={sponsor.logo}
+              alt={sponsor.name}
+              class="w-full"
+              title={sponsor.name}
+            />
           </a>
         );
       })
     }
   </div>
   <span
-    class="absolute top-0 right-0 h-full w-24 bg-gradient-to-l from-white to-transparent z-10"
+    class="absolute top-0 right-0 h-full w-8 tablet:w-16 bg-gradient-to-l from-white to-transparent z-10"
   ></span>
 </div>
 
@@ -125,11 +102,23 @@ const SPONSORS = [
       transform: translateX(-100%);
     }
   }
+  @keyframes slide-to-right {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
 
   .logos-slider {
     animation: slide 30s linear infinite;
   }
-  #logos:hover .logos-slider {
+  .logos-slider-to-right {
+    animation: slide-to-right 30s linear infinite;
+  }
+  #logos:hover .logos-slider,
+  #logos:hover .logos-slider-to-right {
     animation-play-state: paused;
   }
 </style>
