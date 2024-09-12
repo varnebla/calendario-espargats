@@ -101,7 +101,12 @@ export const SPONSORS: Sponsor[] = [
   },
   {
     name: 'Pet Sitters Team',
-    logo: '/sponsors/pet-sitters.webp',
+    logo: '/sponsors/pet-sitters-team.webp',
     url: 'https://www.instagram.com/petsittersteam',
   },
+  {
+    name: 'Maish Studio',
+    logo: '/sponsors/maish-studio.webp',
+    url: 'https://instagram.com/maish.studio',
+  }
 ];
