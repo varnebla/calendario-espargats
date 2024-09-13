@@ -108,5 +108,15 @@ export const SPONSORS: Sponsor[] = [
     name: 'Maish Studio',
     logo: '/sponsors/maish-studio.webp',
     url: 'https://instagram.com/maish.studio',
-  }
+  },
+  {
+    name: 'The 90\'s Sisters',
+    logo: '/sponsors/the-90s-sisters.webp',
+    url: 'https://instagram.com/the90sisters',
+  },
+  {
+    name: 'Moltcat',
+    logo: '/sponsors/moltcat.webp',
+    url: 'https://instagram.com/enredados.bcn',
+  },
 ];

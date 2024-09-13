@@ -5,8 +5,8 @@ import { SPONSORS } from '../data/sponsors';
 
 console.log(SPONSORS.length, 'length');
 
-const FIRST_SPONSORS = SPONSORS.slice(0, 10);
-const LAST_SPONSORS = SPONSORS.slice(10);
+const FIRST_SPONSORS = SPONSORS.slice(0, SPONSORS.length / 2);
+const LAST_SPONSORS = SPONSORS.slice(SPONSORS.length / 2);
 ---
 
 <Layout
