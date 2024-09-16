@@ -8,7 +8,7 @@ export const SPONSORS: Sponsor[] = [
   {
     name: 'BCN Retroclass',
     logo: '/sponsors/bcn-retroclass.webp',
-    url: 'https://retroclassbcn.com/',
+    url: 'https://www.retroclassbcn.com/',
   },
   {
     name: 'The Green Dog',
@@ -18,12 +18,12 @@ export const SPONSORS: Sponsor[] = [
   {
     name: 'Terminal 20',
     logo: '/sponsors/terminal20.webp',
-    url: 'https://terminal20.es/',
+    url: 'https://www.terminal20.es/',
   },
   {
     name: 'Calçats Valencia',
     logo: '/sponsors/calcats-valencia.webp',
-    url: 'https://espardenyeriabarcelona.com',
+    url: 'https://www.espardenyeriabarcelona.com',
   },
   {
     name: 'Valero',
@@ -53,7 +53,7 @@ export const SPONSORS: Sponsor[] = [
   {
     name: 'Wald',
     logo: '/sponsors/wald.webp',
-    url: 'https://waldesparraguera.es/',
+    url: 'https://www.waldesparraguera.es/',
   },
   {
     name: 'Centre Veterinari Abrera',
@@ -82,7 +82,7 @@ export const SPONSORS: Sponsor[] = [
   {
     name: 'Jemaq Insumos',
     logo: '/sponsors/jemaq-insumos.webp',
-    url: 'https://jemaq.com',
+    url: 'https://www.jemaq.com',
   },
   {
     name: 'La Figaflor',
@@ -107,16 +107,36 @@ export const SPONSORS: Sponsor[] = [
   {
     name: 'Maish Studio',
     logo: '/sponsors/maish-studio.webp',
-    url: 'https://instagram.com/maish.studio',
+    url: 'https://www.instagram.com/maish.studio',
   },
   {
     name: 'The 90\'s Sisters',
     logo: '/sponsors/the-90s-sisters.webp',
-    url: 'https://instagram.com/the90sisters',
+    url: 'https://www.instagram.com/the90sisters',
   },
   {
     name: 'Moltcat',
     logo: '/sponsors/moltcat.webp',
-    url: 'https://instagram.com/enredados.bcn',
+    url: 'https://www.instagram.com/enredados.bcn',
+  },
+  {
+    name: 'Noelle Ilustradora',
+    logo: '/sponsors/noelle-ilustradora.webp',
+    url: 'https://www.instagram.com/noleedraws',
+  },
+  {
+    name: 'Cal Duran',
+    logo: '/sponsors/cal-duran.webp',
+    url: 'https://www.calduran.es',
+  },
+  {
+    name: 'Estética Rosana', 
+    logo: '/sponsors/estetica-rosana.webp',
+    url: 'https://www.instagram.com/esteticarosana.abrera',
+  },
+  {
+    name: 'As&Es Saló', 
+    logo: '/sponsors/ases-peluqueria.svg',
+    url: 'https://www.instagram.com/ases_salo',
   },
 ];
