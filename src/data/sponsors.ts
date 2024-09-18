@@ -7,7 +7,7 @@ export interface Sponsor {
 export const SPONSORS: Sponsor[] = [
   {
     name: 'BCN Retroclass',
-    logo: '/sponsors/bcn-retroclass.webp',
+    logo: '/sponsors/bcnretroclass.webp',
     url: 'https://www.retroclassbcn.com/',
   },
   {
@@ -138,5 +138,15 @@ export const SPONSORS: Sponsor[] = [
     name: 'As&Es Saló', 
     logo: '/sponsors/ases-peluqueria.svg',
     url: 'https://www.instagram.com/ases_salo',
+  },
+  {
+    name: 'Smartvet', 
+    logo: '/sponsors/smartvet.webp',
+    url: 'https://www.smartveterinaris.com',
+  },
+  {
+    name: 'Fimov', 
+    logo: '/sponsors/fimov.webp',
+    url: 'https://www.fimov.es',
   },
 ];
