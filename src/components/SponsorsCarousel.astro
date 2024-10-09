@@ -22,7 +22,7 @@ console.log(sponsors.length, 'length');
       sponsors.map((sponsor) => {
         if (!sponsor.url)
           return (
-            <div class="inline-block  hover:scale-105 transition-transform duration-150 w-44 px-6">
+            <div class="inline-block  hover:scale-105 transition-transform duration-150 w-48 px-6">
               <img
                 src={sponsor.logo}
                 alt={sponsor.name}
@@ -34,7 +34,7 @@ console.log(sponsors.length, 'length');
         return (
           <a
             href={sponsor.url}
-            class="inline-block  hover:scale-105 transition-transform duration-150 w-44 px-6"
+            class="inline-block  hover:scale-105 transition-transform duration-150 w-48 px-6"
             target="_blank"
             rel="noopener noreferrer"
             title={sponsor.name}
@@ -42,7 +42,7 @@ console.log(sponsors.length, 'length');
             <img
               src={sponsor.logo}
               alt={sponsor.name}
-              class="w-full"
+              class="w-full object-contain"
               title={sponsor.name}
             />
           </a>
@@ -60,7 +60,7 @@ console.log(sponsors.length, 'length');
       sponsors.map((sponsor) => {
         if (!sponsor.url)
           return (
-            <div class="inline-block  hover:scale-105 transition-transform duration-150 w-44 px-6">
+            <div class="inline-block  hover:scale-105 transition-transform duration-150 w-48 px-6">
               <img
                 src={sponsor.logo}
                 alt={sponsor.name}
@@ -72,7 +72,7 @@ console.log(sponsors.length, 'length');
         return (
           <a
             href={sponsor.url}
-            class="inline-block  hover:scale-105 transition-transform duration-150 w-44 px-6"
+            class="inline-block  hover:scale-105 transition-transform duration-150 w-48 px-6"
             target="_blank"
             rel="noopener noreferrer"
             title={sponsor.name}
@@ -80,7 +80,7 @@ console.log(sponsors.length, 'length');
             <img
               src={sponsor.logo}
               alt={sponsor.name}
-              class="w-full"
+              class="w-full object-contain"
               title={sponsor.name}
             />
           </a>

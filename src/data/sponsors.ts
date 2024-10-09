@@ -149,4 +149,85 @@ export const SPONSORS: Sponsor[] = [
     logo: '/sponsors/fimov.webp',
     url: 'https://www.fimov.es',
   },
+  //NUEVOS
+  {
+    name: 'Acupuntec', 
+    logo: '/sponsors/acupuntec.webp',
+    url: 'https://www.acupuntec.com',
+  },
+  {
+    name: 'Bon Granel', 
+    logo: '/sponsors/bon-granel.webp',
+    url: 'https://bongranel.es',
+  },
+  {
+    name: 'Crossfit Rack n Roll', 
+    logo: '/sponsors/crossfit-racknroll.webp',
+    url: 'https://www.instagram.com/crossfitracknroll',
+  },
+  {
+    name: 'Salón Daniel Alcaraz', 
+    logo: '/sponsors/salon-daniel-alcaraz.webp',
+    url: 'https://www.instagram.com/salon_danielacaraz',
+  },
+  {
+    name: 'El Gramo Original', 
+    logo: '/sponsors/el-gramo-original.webp',
+    url: 'https://www.elgramooriginal.com',
+  },
+  {
+    name: 'Diamond Dogs', 
+    logo: '/sponsors/diamond-dogs.webp',
+    url: 'https://www.instagram.com/diamonddogs_abrera',
+  },
+  {
+    name: 'La utópica', 
+    logo: '/sponsors/la-utopica-llibreria.webp',
+    url: 'https://lautopicallibreria.cat',
+  },
+  {
+    name: 'Woodraw', 
+    logo: '/sponsors/woodraw.webp',
+    url: 'https://woodraw.es',
+  },
+  {
+    name: 'Sweet Clothes', 
+    logo: '/sponsors/sweet-clothes.webp',
+    url: 'https://instagram.com/sweetclothesesparreguera',
+  },
+  {
+    name: 'Su amor deja huella', 
+    logo: '/sponsors/su-amor-deja-huella.webp',
+    url: 'https://instagram.com/tanatoriomascotas',
+  },
+  {
+    name: 'Sol natural', 
+    logo: '/sponsors/sol-natural.webp',
+    url: 'https://solnatural.bio',
+  },
+  {
+    name: 'Kenaz', 
+    logo: '/sponsors/kenaz.webp',
+    url: 'https://instagram.com/kenazrestaurante',
+  },
+  {
+    name: 'Le monde d\'Eli', 
+    logo: '/sponsors/le-monde-d-eli.webp',
+    url: 'https://www.lemondedeli.com',
+  },
+  {
+    name: 'Indalum Gestió', 
+    logo: '/sponsors/indalum.webp',
+    url: 'https://instagram.com/indalumgestio',
+  },
+  {
+    name: 'Gatesania', 
+    logo: '/sponsors/gatesania.webp',
+  },
+  {
+    name: 'El gato con joyas', 
+    logo: '/sponsors/el-gato-con-joyas.webp',
+    url: 'https://elgatoconjoyas.es',
+  },
+
 ];

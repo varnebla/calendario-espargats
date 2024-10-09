@@ -5,8 +5,12 @@ import { SPONSORS } from '../data/sponsors';
 
 console.log(SPONSORS.length, 'length');
 
-const FIRST_SPONSORS = SPONSORS.slice(0, SPONSORS.length / 2);
-const LAST_SPONSORS = SPONSORS.slice(SPONSORS.length / 2);
+const FIRST_SPONSORS = SPONSORS.slice(0, SPONSORS.length / 3);
+const SECOND_SPONSORS = SPONSORS.slice(
+  SPONSORS.length / 3,
+  (SPONSORS.length / 3) * 2
+);
+const LAST_SPONSORS = SPONSORS.slice((SPONSORS.length / 3) * 2);
 ---
 
 <Layout
@@ -51,8 +55,11 @@ const LAST_SPONSORS = SPONSORS.slice(SPONSORS.length / 2);
         <h2 class="mb-8 text-2xl tracking-tight font-bold text-gray-900">
           Ya colaboran con nosotros:
         </h2>
-        <SponsorsCarousel sponsors={FIRST_SPONSORS} direction="left" />
-        <SponsorsCarousel sponsors={LAST_SPONSORS} direction="right" />
+        <div class="flex flex-col gap-y-4">
+          <SponsorsCarousel sponsors={FIRST_SPONSORS} direction="left" />
+          <SponsorsCarousel sponsors={SECOND_SPONSORS} direction="right" />
+          <SponsorsCarousel sponsors={LAST_SPONSORS} direction="left" />
+        </div>
       </section>
       <section class="pb-8 mx-auto max-w-screen-xl sm:pb-16">
         <div class="max-w-screen-md mb-8">
