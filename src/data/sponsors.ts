@@ -229,5 +229,10 @@ export const SPONSORS: Sponsor[] = [
     logo: '/sponsors/el-gato-con-joyas.webp',
     url: 'https://elgatoconjoyas.es',
   },
+  {
+    name: 'Centre Blanch', 
+    logo: '/sponsors/centre-blanch.webp',
+    url: 'https://instagram.com/centreblanch',
+  },
 
 ];
