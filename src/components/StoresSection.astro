@@ -1,0 +1,86 @@
+---
+import StoreSectionItem from './StoreSectionItem.astro';
+
+const puntosBarcelona = [
+  {
+    nombre: 'Fimov Clínica de fisioterapia',
+    URL: 'https://g.co/kgs/jHyeQ2w',
+  },
+  {
+    nombre: 'Bon Granel',
+    URL: 'https://g.co/kgs/psz5QNX',
+  },
+];
+const puntosEsparreguera = [
+  {
+    nombre: 'Panadería Sopena',
+    URL: 'https://g.co/kgs/rZ6GyhG',
+  },
+  {
+    nombre: 'BCN Retro Class',
+    URL: 'https://g.co/kgs/dme6tia',
+  },
+  {
+    nombre: 'The Green Dog',
+    URL: 'https://g.co/kgs/mGawohR',
+  },
+  {
+    nombre: 'Wald Restaurant',
+    URL: 'https://g.co/kgs/7zn7C6i',
+  },
+  {
+    nombre: "Activa't ECO",
+    URL: 'https://g.co/kgs/4dojx6k',
+  },
+  {
+    nombre: 'Centre Blanch',
+    URL: 'https://g.co/kgs/oDiQkZo',
+  },
+];
+
+const puntosAbrera = [
+  {
+    nombre: 'Diamond Dogs Peluquería canina',
+    URL: 'https://maps.app.goo.gl/FHgDvbFygPP8ffGE8',
+  },
+  {
+    nombre: 'La Figaflor Llibreria Espai cultural',
+    URL: 'https://g.co/kgs/z5JvYbm',
+  },
+  {
+    nombre: 'Rosana Estética',
+    URL: 'https://g.co/kgs/UddKFSY',
+  },
+];
+---
+
+<section class="bg-white">
+  <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+    <div class="max-w-screen-md mb-8 lg:mb-16">
+      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
+        ¿Dónde puedo comprar el calendario?
+      </h2>
+      <p class="text-gray-500 sm:text-xl">
+        Estos son los puntos de venta donde podrás comprar el calendario.
+      </p>
+    </div>
+    <section class="mb-8">
+      <p class="text-2xl font-bold mb-4">Barcelona</p>
+      <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
+        {puntosBarcelona.map((punto) => <StoreSectionItem punto={punto} />)}
+      </div>
+    </section>
+    <section class="mb-8">
+      <p class="text-2xl font-bold mb-4">Esparreguera</p>
+      <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
+        {puntosEsparreguera.map((punto) => <StoreSectionItem punto={punto} />)}
+      </div>
+    </section>
+    <section class="mb-8">
+      <p class="text-2xl font-bold mb-4">Abrera</p>
+      <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
+        {puntosAbrera.map((punto) => <StoreSectionItem punto={punto} />)}
+      </div>
+    </section>
+  </div>
+</section>
