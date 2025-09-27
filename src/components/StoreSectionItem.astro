@@ -6,9 +6,10 @@ const { punto } = Astro.props;
   href={punto.URL}
   rel="noopener noreferrer"
   target="_blank"
-  class="flex flex-col justify-center w-full h-full gap-y-2 rounded border border-gray-100 shadow-sm p-4"
+  class="flex flex-col justify-center w-full h-full gap-y-1 rounded-md border border-primary-100 p-4 hover:shadow-lg hover:shadow-primary-500/10 transition-shadow duration-150"
 >
-  <div class="flex items-center w-full h-full text-gray-500">
+  <p class="text-lg font-medium text-gray-900">{punto.nombre}</p>
+  <div class="flex items-center w-full h-full text-gray-500 mb-4">
     <svg
       class="min-w-4 w-4 h-4 me-1"
       aria-hidden="true"
@@ -26,8 +27,7 @@ const { punto } = Astro.props;
         d="M12 15a6 6 0 1 0 0-12 6 6 0 0 0 0 12Zm0 0v6M9.5 9A2.5 2.5 0 0 1 12 6.5"
       ></path>
     </svg>
-
-    <p class="text-sm font-medium text-gray-900">{punto.nombre}</p>
+    <p class="text-sm">{punto.ciudad}</p>
   </div>
   <p
     class="inline-flex px-1 items-center text-sm font-medium rounded-lg text-primary-500 w-max hover:text-primary-800"

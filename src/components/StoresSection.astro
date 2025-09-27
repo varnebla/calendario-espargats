@@ -1,57 +1,76 @@
 ---
 import StoreSectionItem from './StoreSectionItem.astro';
 
-const puntosBarcelona = [
-  {
-    nombre: 'Fimov Clínica de fisioterapia',
-    URL: 'https://g.co/kgs/jHyeQ2w',
-  },
+const puntosVenta = [
   {
     nombre: 'Bon Granel',
     URL: 'https://g.co/kgs/psz5QNX',
-  },
-];
-const puntosEsparreguera = [
-  {
-    nombre: 'Panadería Sopena',
-    URL: 'https://g.co/kgs/rZ6GyhG',
+    ciudad: 'Barcelona',
   },
   {
     nombre: 'BCN Retro Class',
     URL: 'https://g.co/kgs/dme6tia',
-  },
-  {
-    nombre: 'The Green Dog',
-    URL: 'https://g.co/kgs/mGawohR',
-  },
-  {
-    nombre: 'Wald Restaurant',
-    URL: 'https://g.co/kgs/7zn7C6i',
-  },
-  {
-    nombre: "Activa't ECO",
-    URL: 'https://g.co/kgs/4dojx6k',
-  },
-  {
-    nombre: 'Centre Blanch',
-    URL: 'https://g.co/kgs/oDiQkZo',
-  },
-];
-
-const puntosAbrera = [
-  {
-    nombre: 'Diamond Dogs Peluquería canina',
-    URL: 'https://maps.app.goo.gl/FHgDvbFygPP8ffGE8',
-  },
-  {
-    nombre: 'La Figaflor Llibreria Espai cultural',
-    URL: 'https://g.co/kgs/z5JvYbm',
+    ciudad: 'Esparreguera',
   },
   {
     nombre: 'Rosana Estética',
     URL: 'https://g.co/kgs/UddKFSY',
+    ciudad: 'Abrera',
+  },
+  {
+    nombre: 'Centre Veterinari Abrera',
+    URL: 'https://share.google/8jlHfJTDNDLmu8Pqk',
+    ciudad: 'Abrera',
   },
 ];
+
+// const puntosBarcelona = [
+//   {
+//     nombre: 'Fimov Clínica de fisioterapia',
+//     URL: 'https://g.co/kgs/jHyeQ2w',
+//     ciudad: 'Barcelona',
+//   },
+// ];
+// const puntosEsparreguera = [
+//   {
+//     nombre: 'Panadería Sopena',
+//     URL: 'https://g.co/kgs/rZ6GyhG',
+//     ciudad: 'Esparreguera',
+//   },
+//   {
+//     nombre: 'The Green Dog',
+//     URL: 'https://g.co/kgs/mGawohR',
+//     ciudad: 'Esparreguera',
+//   },
+//   {
+//     nombre: 'Wald Restaurant',
+//     URL: 'https://g.co/kgs/7zn7C6i',
+//     ciudad: 'Esparreguera',
+//   },
+//   {
+//     nombre: "Activa't ECO",
+//     URL: 'https://g.co/kgs/4dojx6k',
+//     ciudad: 'Esparreguera',
+//   },
+//   {
+//     nombre: 'Centre Blanch',
+//     URL: 'https://g.co/kgs/oDiQkZo',
+//     ciudad: 'Esparreguera',
+//   },
+// ];
+
+// const puntosAbrera = [
+//   {
+//     nombre: 'Diamond Dogs Peluquería canina',
+//     URL: 'https://maps.app.goo.gl/FHgDvbFygPP8ffGE8',
+//     ciudad: 'Abrera',
+//   },
+//   {
+//     nombre: 'La Figaflor Llibreria Espai cultural',
+//     URL: 'https://g.co/kgs/z5JvYbm',
+//     ciudad: 'Abrera',
+//   },
+// ];
 ---
 
 <section class="bg-white scroll-mt-14" id="stores-section">
@@ -61,18 +80,20 @@ const puntosAbrera = [
         ¿Dónde puedo comprar el calendario?
       </h2>
       <p class="text-gray-500 sm:text-xl">
-        Estos son los puntos de venta donde podrás comprar el calendario.
+        El calendario no solo es ideal para ti, ¡también para regalar! Y cuántos
+        más calendarios compres, más sorpresas te tenemos preparadas. Puedes
+        pedir el calendario para que te llegue a tu casa (mediante este link) o
+        pasar a comprarlo en cualquiera de nuestros negocios amigos:
       </p>
     </div>
     <section class="mb-8">
-      <p class="text-2xl font-bold mb-4">Barcelona</p>
       <div
         class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-8"
       >
-        {puntosBarcelona.map((punto) => <StoreSectionItem punto={punto} />)}
+        {puntosVenta.map((punto) => <StoreSectionItem punto={punto} />)}
       </div>
     </section>
-    <section class="mb-8">
+    <!-- <section class="mb-8">
       <p class="text-2xl font-bold mb-4">Esparreguera</p>
       <div
         class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-8"
@@ -87,6 +108,6 @@ const puntosAbrera = [
       >
         {puntosAbrera.map((punto) => <StoreSectionItem punto={punto} />)}
       </div>
-    </section>
+    </section> -->
   </div>
 </section>
