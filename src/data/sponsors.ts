@@ -21,24 +21,14 @@ export const SPONSORS: Sponsor[] = [
     url: 'https://www.terminal20.es/',
   },
   {
-    name: 'Calçats Valencia',
-    logo: '/sponsors/calcats-valencia.webp',
-    url: 'https://www.espardenyeriabarcelona.com',
+    name: 'La tienda de las alpargatas',
+    logo: '/sponsors/la-tienda-alpargatas.webp',
+    url: 'https://www.latiendadelasalpargatas.com',
   },
   {
     name: 'Valero',
     logo: '/sponsors/valero.webp',
     url: 'https://www.instagram.com/valerofornesparreguera',
-  },
-  {
-    name: 'Pantoart',
-    logo: '/sponsors/pantoart.webp',
-    url: 'https://www.pantoart.com',
-  },
-  {
-    name: 'Los Nidos de David',
-    logo: '/sponsors/los-nidos-de-david.webp',
-    url: 'https://www.losnidosdedavid.com/',
   },
   {
     name: 'Trocitos de scrap',
@@ -49,11 +39,6 @@ export const SPONSORS: Sponsor[] = [
     name: 'El Badiu Scrap',
     logo: '/sponsors/el-badiu-scrap.webp',
     url: 'https://www.instagram.com/elbadiu_scrap',
-  },
-  {
-    name: 'Wald',
-    logo: '/sponsors/wald.webp',
-    url: 'https://www.waldesparraguera.es/',
   },
   {
     name: 'Centre Veterinari Abrera',
@@ -70,11 +55,6 @@ export const SPONSORS: Sponsor[] = [
     url: 'https://www.instagram.com/activat.eco',
   },
   {
-    name: 'Ana Web SEO',
-    logo: '/sponsors/ana-wse.webp',
-    url: 'https://www.instagram.com/webseoesparreguera',
-  },
-  {
     name: 'Mohe',
     logo: '/sponsors/gestoria-mohe.webp',
     url: 'https://www.mo-he.es',
@@ -85,29 +65,9 @@ export const SPONSORS: Sponsor[] = [
     url: 'https://www.jemaq.com',
   },
   {
-    name: 'La Figaflor',
-    logo: '/sponsors/la-figaflor.webp',
-    url: 'https://www.lafigaflor.com',
-  },
-  {
-    name: 'Pet Shop Girls',
-    logo: '/sponsors/pet-shop-girls.webp',
-    url: 'https://www.instagram.com/pet.shop.girls',
-  },
-  {
     name: 'Panadería Sopena',
     logo: '/sponsors/sopena.webp',
     url: 'https://www.instagram.com/panaderia-sopena',
-  },
-  {
-    name: 'Pet Sitters Team',
-    logo: '/sponsors/pet-sitters-team.webp',
-    url: 'https://www.instagram.com/petsittersteam',
-  },
-  {
-    name: 'Maish Studio',
-    logo: '/sponsors/maish-studio.webp',
-    url: 'https://www.instagram.com/maish.studio',
   },
   {
     name: 'The 90\'s Sisters',
@@ -115,14 +75,9 @@ export const SPONSORS: Sponsor[] = [
     url: 'https://www.instagram.com/the90sisters',
   },
   {
-    name: 'Moltcat',
-    logo: '/sponsors/moltcat.webp',
+    name: 'Enredados by Moltcat',
+    logo: '/sponsors/enredados-moltcat.webp',
     url: 'https://www.instagram.com/enredados.bcn',
-  },
-  {
-    name: 'Noelle Ilustradora',
-    logo: '/sponsors/noelle-ilustradora.webp',
-    url: 'https://www.instagram.com/noleedraws',
   },
   {
     name: 'Cal Duran',
@@ -145,12 +100,6 @@ export const SPONSORS: Sponsor[] = [
     url: 'https://www.smartveterinaris.com',
   },
   {
-    name: 'Fimov', 
-    logo: '/sponsors/fimov.webp',
-    url: 'https://www.fimov.es',
-  },
-  //NUEVOS
-  {
     name: 'Acupuntec', 
     logo: '/sponsors/acupuntec.webp',
     url: 'https://www.acupuntec.com',
@@ -171,29 +120,14 @@ export const SPONSORS: Sponsor[] = [
     url: 'https://www.instagram.com/salon_danielacaraz',
   },
   {
-    name: 'El Gramo Original', 
-    logo: '/sponsors/el-gramo-original.webp',
-    url: 'https://www.elgramooriginal.com',
-  },
-  {
     name: 'Diamond Dogs', 
     logo: '/sponsors/diamond-dogs.webp',
     url: 'https://www.instagram.com/diamonddogs_abrera',
   },
   {
-    name: 'La utópica', 
-    logo: '/sponsors/la-utopica-llibreria.webp',
-    url: 'https://lautopicallibreria.cat',
-  },
-  {
-    name: 'Woodraw', 
-    logo: '/sponsors/woodraw.webp',
-    url: 'https://woodraw.es',
-  },
-  {
-    name: 'Sweet Clothes', 
-    logo: '/sponsors/sweet-clothes.webp',
-    url: 'https://instagram.com/sweetclothesesparreguera',
+    name: 'Mokuren', 
+    logo: '/sponsors/mokuren.webp',
+    url: 'https://mokuren.es',
   },
   {
     name: 'Su amor deja huella', 
@@ -206,33 +140,89 @@ export const SPONSORS: Sponsor[] = [
     url: 'https://solnatural.bio',
   },
   {
-    name: 'Kenaz', 
-    logo: '/sponsors/kenaz.webp',
-    url: 'https://instagram.com/kenazrestaurante',
-  },
-  {
     name: 'Le monde d\'Eli', 
     logo: '/sponsors/le-monde-d-eli.webp',
     url: 'https://www.lemondedeli.com',
   },
   {
-    name: 'Indalum Gestió', 
-    logo: '/sponsors/indalum.webp',
-    url: 'https://instagram.com/indalumgestio',
-  },
-  {
-    name: 'Gatesania', 
-    logo: '/sponsors/gatesania.webp',
-  },
-  {
-    name: 'El gato con joyas', 
-    logo: '/sponsors/el-gato-con-joyas.webp',
-    url: 'https://elgatoconjoyas.es',
-  },
-  {
     name: 'Centre Blanch', 
     logo: '/sponsors/centre-blanch.webp',
     url: 'https://instagram.com/centreblanch',
+  },
+  {
+    name: 'Pamar', 
+    logo: '/sponsors/pamar.webp',
+    url: 'https://pamarneteges.com/',
+  },
+  {
+    name: 'V13 Art Project', 
+    logo: '/sponsors/v13-art-project.webp',
+    url: 'https://instagram.com/v13artproject',
+  },
+  {
+    name: 'Nivia Dental', 
+    logo: '/sponsors/nivia-dental.webp',
+    url: 'https://niviadental.com/',
+  },
+  {
+    name: 'Wondersculpt', 
+    logo: '/sponsors/wondersculpt.webp',
+    url: 'https://instagram.com/wondersculpt_bali',
+  },
+  {
+    name: 'Zarpa Creativa', 
+    logo: '/sponsors/zarpa-creativa.webp',
+    url: 'https://instagram.com/zarpacreativa',
+  },
+  {
+    name: 'Hidronet', 
+    logo: '/sponsors/hidronet.webp',
+    url: 'https://hidronet.com/',
+  },
+  {
+    name: 'Carpintería de Aluminio P. Bravo', 
+    logo: '/sponsors/p-bravo.webp',
+    url: 'https://share.google/LWeIzkqFcXsTiLYcl',
+  },
+  {
+    name: 'Imatg Comunicació', 
+    logo: '/sponsors/imatg-comunicacio.webp',
+    url: 'https://instagram.com/imatg_comunicacio',
+  },
+  {
+    name: 'Víctor López Assessors', 
+    logo: '/sponsors/victor-lopez-assessors.webp',
+    url: 'https://www.vlassessors.net',
+  },
+  {
+    name: 'Dolly Boutique', 
+    logo: '/sponsors/dolly-boutique.webp',
+    url: 'https://instagram.com/dolly.boutique',
+  },
+  {
+    name: 'Sinergies', 
+    logo: '/sponsors/sinergies.webp',
+    url: 'https://instagram.com/sinergies_esparreguera',
+  },
+  {
+    name: 'IL Consultoría', 
+    logo: '/sponsors/il-consultoria.webp',
+    url: 'https://ilconsultoria.com',
+  },
+  {
+    name: '8 telas', 
+    logo: '/sponsors/8-telas.webp',
+    url: 'https://instagram.com/8telas',
+  },
+  {
+    name: 'PJ Nails', 
+    logo: '/sponsors/pj-nails.webp',
+    url: 'https://instagram.com/pj.nailstudio',
+  },
+  {
+    name: 'Academia Atenea', 
+    logo: '/sponsors/academia-atenea.webp',
+    url: 'https://instagram.com/academiateneabrera',
   },
 
 ];
