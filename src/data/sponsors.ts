@@ -224,5 +224,15 @@ export const SPONSORS: Sponsor[] = [
     logo: '/sponsors/academia-atenea.webp',
     url: 'https://instagram.com/academiateneabrera',
   },
+  {
+    name: 'CATNA', 
+    logo: '/sponsors/catna.webp',
+    url: 'https://instagram.com/catnavet',
+  },
+  {
+    name: 'La màquina d\'escriure', 
+    logo: '/sponsors/la-maquina-escriure.webp',
+    url: 'https://instagram.com/la.maquina.descriure',
+  },
 
 ];
