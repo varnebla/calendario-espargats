@@ -41,6 +41,13 @@ const { title, description } = Astro.props;
       name="twitter:image"
       content="https://opengraph.b-cdn.net/production/images/cc32d166-36c2-4bb9-9895-44fbdb239501.jpg?token=bGmCFe7niJHVdDx2JTaKigYKNGgfwQBRDnAxl04IkHs&height=675&width=1200&expires=33259154916"
     />
+    <script
+      defer
+      src="https://cloud.umami.is/script.js"
+      data-website-id="0358d179-2da4-4ec1-9b41-db9369dc12ab"></script>
+    <script>
+      if (!import.meta.env.PROD) localStorage.setItem('umami.disabled', '1');
+    </script>
   </head>
   <body class="font-body">
     <TheHeader />
